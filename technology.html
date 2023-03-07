@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon-32x32.png">
+            <link rel="stylesheet" href="./assets/CSS/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+            rel="stylesheet">
+
+        <title>Frontend Mentor | Space tourism website</title>
+    </head>
+    <body class="tec">
+        <header class="header">
+            <img src="./assets/shared/logo.svg" alt="" class="logo">
+            <nav class="menu">
+                <ul class="menu-itens">
+                    <li>
+                        <a class="menu-item2" href="./index.html">00 HOME</a>
+                    </li>
+                    <li>
+                        <a class="menu-item2" href="./destination.html">01 DESTINATION</a>
+                    </li>
+                    <li>
+                        <a class="menu-item2" href="./crew.html">02 CREW</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="./technology.html">03 TECHNOLOGY</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h5 class="h5">
+                    <span class="span">03</span>
+                    SPACE LAUNCH 101
+                </h5>
+            </div>
+            <div class="tecnology">
+                <div class="tec-content">
+                    <div class="tec-conteudo">
+                        <div class="tec-control">
+                            <a onclick="trocaClasse(`vehicle`, `vehicle2`)" href="" class="teccontrol-item open3">1</a>
+                            <a onclick="trocaClasse(`port`, `port2`)" href="" class="teccontrol-item">2</a>
+                            <a onclick="trocaClasse(`capsule`, `capsule2`)" href="" class="teccontrol-item">3</a>
+                        </div>
+                        <div class="tec-itens">
+                            <div class="tec-iten active" id="vehicle"> 
+                                <p class="subhead">THE TERMINOLOGY...</p>
+                                <h3 class="tec-title">LAUNCH VEHICLE</h3><br>
+                                <p class="tec-legend">A launch vehicle or carrier rocket is a rocket-propelled
+                                    vehicle used to carry a payload from Earth's surface to space, usually to Earth
+                                    orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation.
+                                    Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                            </div>
+                            <div class="tec-iten" id="port">
+                              <p class="subhead">THE TERMINOLOGY...</p>
+                                <h3 class="tec-title">SPACEPORT</h3><br>
+                                <p class="tec-legend">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+                                  by analogy to the seaport for ships or airport for aircraft. Based in the 
+                                  famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+                                  of the Earth’s rotation for launch.</p>
+                            </div>
+                            <div class="tec-iten" id="capsule">
+                              <p class="subhead">THE TERMINOLOGY...</p>
+                                <h3 class="tec-title">SPACE CAPSULE</h3><br>
+                                <p class="tec-legend">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tec-images">
+                      <div class="tec-image active" id="vehicle2">
+                        <img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+                      </div>
+                      <div class="tec-image" id="port2">
+                        <img src="./assets/technology/image-spaceport-portrait.jpg" alt="">
+                      </div>
+                      <div class="tec-image" id="capsule2">
+                        <img src="./assets/technology/image-space-capsule-portrait.jpg" alt="">
+                      </div>
+                    </div>
+                </div>
+    </div>
+  </main>
+  <script src="./assets/js/script.js"></script>
+  </body>
+</html>

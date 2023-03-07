@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/CSS/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="destination">
+  <header class="header">
+    <img src="./assets/shared/logo.svg" alt="" class="logo">
+    <nav class="menu">
+      <ul class="menu-itens">
+        <li><a class="menu-item2" href="./index.html">00 HOME</a></li>
+        <li><a class="menu-item" href="./destination.html">01 DESTINATION</a></li>
+        <li><a class="menu-item2" href="./crew.html">02 CREW</a></li>
+        <li><a class="menu-item2" href="./technology.html">03 TECHNOLOGY</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="title">
+      <h5 class="h5">
+        <span class="span">01</span>
+        PICK YOUR DESTINATION
+      </h5>
+    </div>
+    <div class="content">
+      <div class="container2">
+        <div class="destination2">
+          <div class="image-item active" id="moon"><img class="planets"  src="./assets/destination/lua.png" alt="Moon"></div>
+          <div class="image-item" id="mars"><img class="planets" src="./assets/destination/image-mars.webp" alt=""></div>
+          <div class="image-item" id="europa"><img class="planets" src="./assets/destination/image-europa.webp" alt=""></div>
+          <div class="image-item" id="titan"><img class="planets" src="./assets/destination/image-titan.webp" alt=""></div>
+        </div>
+        <div class="plan-content">
+          <div class="controls">
+            <a onclick="trocaClasse(`moon`, `moon2`)" class="control open" href="#moon">MOON</a>
+            <a onclick="trocaClasse(`mars`, `mars2`)" class="control" href="#mars">MARS</a>
+            <a onclick="trocaClasse(`europa`, `europa2`)" class="control" href="#europa">EUROPA</a>
+            <a onclick="trocaClasse(`titan`, `titan2`)" class="control" href="#titan">TITAN</a>
+          </div>
+          <div class="content-item active" id="moon2">
+            <h2 class="plan-name">MOON</h2>
+            <p class="legend">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+              regain perspective and come back refreshed. While you’re there, take in some history 
+              by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+            <div class="stats">
+              <div class="distance">
+                <p class="sub1">AVG. DISTANCE</p>
+                <p class="sub2"> 384,400 KM</p>
+              </div>
+              <div class="time">
+                <p class="sub1">EST. TRAVEL TIME</p>
+                <p class="sub2">3 DAYS</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-item" id="mars2">
+            <h2 class="plan-name">MARS</h2>
+            <p class="legend">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+              the tallest planetary mountain in our solar system. It’s two and a half times 
+              the size of Everest!
+            </p>
+            <div class="stats">
+              <div class="distance">
+                <p class="sub1">AVG. DISTANCE</p>
+                <p class="sub2">  225 MIL. KM</p>
+              </div>
+              <div class="time">
+                <p class="sub1">EST. TRAVEL TIME</p>
+                <p class="sub2">9 MONTHS</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-item" id="europa2">
+            <h2 class="plan-name">EUROPA</h2>
+            <p class="legend">The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+              winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+              ice skating, curling, hockey, or simple relaxation in your snug 
+              wintery cabin.
+            </p>
+            <div class="stats">
+              <div class="distance">
+                <p class="sub1">AVG. DISTANCE</p>
+                <p class="sub2">  628 MIL. KM</p>
+              </div>
+              <div class="time">
+                <p class="sub1">EST. TRAVEL TIME</p>
+                <p class="sub2">3 YEARS</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-item" id="titan2">
+            <h2 class="plan-name">TITAN</h2>
+            <p class="legend">The only moon known to have a dense atmosphere other than Earth, Titan 
+              is a home away from home (just a few hundred degrees colder!). As a 
+              bonus, you get striking views of the Rings of Saturn.
+            </p>
+            <div class="stats">
+              <div class="distance">
+                <p class="sub1">AVG. DISTANCE</p>
+                <p class="sub2">  1.6 BIL. KM</p>
+              </div>
+              <div class="time">
+                <p class="sub1">EST. TRAVEL TIME</p>
+                <p class="sub2">7 YEARS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
